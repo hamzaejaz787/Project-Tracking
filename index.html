@@ -3,68 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Project tracking intro component</title>
+    <title>Frontend Mentor | Pricing Component</title>
   </head>
   <body>
-    <nav class="nav">
-      <div class="logo">
-        <img src="./Images/logo.svg" alt="" />
-      </div>
-      <ul class="nav-lists">
-        <li class="nav-list"><a href="#">Product</a></li>
-        <li class="nav-list"><a href="#">Feature</a></li>
-        <li class="nav-list"><a href="#">Pricing</a></li>
-        <div class="dot"></div>
-        <li class="nav-list">
-          <a class="login" href="#">Login</a>
-        </li>
-      </ul>
-      <div class="burger">
-        <img class="hamburger" src="./Images/icon-hamburger.svg" alt="" />
+    <div class="background-top">
+      <img src="./images/bg-top.svg" alt="" />
+    </div>
+    <div class="background-bottom">
+      <img src="./images/bg-bottom.svg" alt="" />
+    </div>
 
-        <img class="arrow-icon" src="./Images/icon-close.svg" alt="" />
+    <!-- TOGGLE -->
+    <div class="toggle-container">
+      <h2 class="toggle-title">Our Pricing</h2>
+      <div class="toggle">
+        <p>Annually</p>
+        <label class="toggle-box">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p>Monthly</p>
       </div>
-    </nav>
-    <section class="main">
-      <div class="intro">
-        <h6 class="intro-heading">
-          <p>New</p>
-          Monograph dashboard
-        </h6>
-        <h1 class="intro-title">
-          Powerful insights<br />
-          into your team
-        </h1>
-        <p class="intro-text">
-          Project planning and time tracking<br />
-          for agile teams
-        </p>
-        <div class="cta">
-          <button class="cta-btn">Schedule a demo</button>
-          <p>To see a preview</p>
-        </div>
-      </div>
-      <div class="img-container">
-        <img class="illustration" src="./images/illustration-devices.svg" />
-      </div>
-    </section>
+    </div>
 
-    <script src="app.js"></script>
+    <!-- CARDS -->
+    <div class="cards">
+      <div class="card card-one">
+        <h4 class="title">Basic</h4>
+        <h1 class="price monthly">&dollar;19.99</h1>
+        <h1 class="price yearly">&dollar;199.99</h1>
+        <ul class="benefits">
+          <li>500GB Storage</li>
+          <li>2 Users Allowed</li>
+          <li>Send up to 3GB</li>
+        </ul>
+        <button class="button">Learn More</button>
+      </div>
+
+      <div class="card card-two">
+        <h4 class="title">Professional</h4>
+        <h1 class="price monthly">&dollar;24.99</h1>
+        <h1 class="price yearly">&dollar;249.99</h1>
+        <ul class="benefits">
+          <li>1TB Storage</li>
+          <li>5 Users Allowed</li>
+          <li>Send up to 10GB</li>
+        </ul>
+        <button class="button">Learn More</button>
+      </div>
+      <div class="card card-three">
+        <h4 class="title">Master</h4>
+        <h1 class="price monthly">&dollar;39.99</h1>
+        <h1 class="price yearly">&dollar;399.99</h1>
+        <ul class="benefits">
+          <li>2TB Storage</li>
+          <li>10 Users Allowed</li>
+          <li>Send up to 20GB</li>
+        </ul>
+        <button class="button">Learn More</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
